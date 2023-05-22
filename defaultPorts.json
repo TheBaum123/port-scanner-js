@@ -1,0 +1,443 @@
+[
+    {
+        "port": "0",
+        "TCP": false,
+        "UDP": true,
+        "description": "reserved",
+        "official": "true"
+    },
+    {
+        "port": "1",
+        "TCP": true,
+        "UDP": true,
+        "description": "true port service multiplexer (truemux)",
+        "official": "true"
+    },
+    {
+        "port": "2",
+        "TCP": true,
+        "UDP": true,
+        "description": "compressnet management utility",
+        "official": "true"
+    },
+    {
+        "port": "3",
+        "TCP": true,
+        "UDP": true,
+        "description": "compressnet compression process",
+        "official": "true"
+    },
+    {
+        "port": "4",
+        "TCP": true,
+        "UDP": true,
+        "description": "mesh connection protocol",
+        "official": "false"
+    },
+    {
+        "port": "5",
+        "TCP": true,
+        "UDP": true,
+        "description": "remote job entry",
+        "official": "true"
+    },
+    {
+        "port": "6",
+        "TCP": true,
+        "UDP": true,
+        "description": "not assigned",
+        "official": "true"
+    },
+    {
+        "port": "7",
+        "TCP": true,
+        "UDP": true,
+        "description": "echo",
+        "official": "true"
+    },
+    {
+        "port": "8",
+        "TCP": true,
+        "UDP": true,
+        "description": "not assigned ",
+        "official": "true"
+    },
+    {
+        "port": "9",
+        "TCP": true,
+        "UDP": true,
+        "description": "discard",
+        "official": "true"
+    },
+    {
+        "port": "10",
+        "TCP": true,
+        "UDP": true,
+        "description": "not assigned",
+        "official": "true"
+    },
+    {
+        "port": "11",
+        "TCP": true,
+        "UDP": true,
+        "description": "system information over (systat-service)",
+        "official": "true"
+    },
+    {
+        "port": "12",
+        "TCP": true,
+        "UDP": true,
+        "description": "not assigned",
+        "official": "true"
+    },
+    {
+        "port": "13",
+        "TCP": true,
+        "UDP": true,
+        "description": "daytime (rfc 867)",
+        "official": "true"
+    },
+    {
+        "port": "14",
+        "TCP": true,
+        "UDP": true,
+        "description": "not assigned",
+        "official": "true"
+    },
+    {
+        "port": "15",
+        "TCP": true,
+        "UDP": true,
+        "description": "netstat service",
+        "official": "false"
+    },
+    {
+        "port": "16",
+        "TCP": true,
+        "UDP": true,
+        "description": "not assigned",
+        "official": "true"
+    },
+    {
+        "port": "17",
+        "TCP": true,
+        "UDP": true,
+        "description": "quote of the day (qotd)",
+        "official": "true"
+    },
+    {
+        "port": "18",
+        "TCP": true,
+        "UDP": true,
+        "description": "message send protocol",
+        "official": "true"
+    },
+    {
+        "port": "19",
+        "TCP": true,
+        "UDP": true,
+        "description": "character generator protocol (chargen)",
+        "official": "true"
+    },
+    {
+        "port": "20",
+        "TCP": true,
+        "UDP": false,
+        "description": "ftp – file transfer",
+        "official": "true"
+    },
+    {
+        "port": "21",
+        "TCP": true,
+        "UDP": true,
+        "description": "ftp – connection and control",
+        "official": "true"
+    },
+    {
+        "port": "22",
+        "TCP": true,
+        "UDP": true,
+        "description": "secure shell (ssh)",
+        "official": "true"
+    },
+    {
+        "port": "23",
+        "TCP": true,
+        "UDP": false,
+        "description": "telnet",
+        "official": "true"
+    },
+    {
+        "port": "24",
+        "TCP": true,
+        "UDP": true,
+        "description": "priv-mail: privat e-mail-systems.",
+        "official": "true"
+    },
+    {
+        "port": "24",
+        "TCP": true,
+        "UDP": true,
+        "description": "lmtp (local mail transport protocol)",
+        "official": "false"
+    },
+    {
+        "port": "25",
+        "TCP": true,
+        "UDP": false,
+        "description": "simple mail transfer protocol (smtp)",
+        "official": "true"
+    },
+    {
+        "port": "26",
+        "TCP": true,
+        "UDP": true,
+        "description": "not assigned",
+        "official": "true"
+    },
+    {
+        "port": "34",
+        "TCP": true,
+        "UDP": true,
+        "description": "remote file (rf)",
+        "official": "false"
+    },
+    {
+        "port": "35",
+        "TCP": true,
+        "UDP": true,
+        "description": "private printer server protocol",
+        "official": "true"
+    },
+    {
+        "port": "37",
+        "TCP": true,
+        "UDP": true,
+        "description": "time-protocol",
+        "official": "true"
+    },
+    {
+        "port": "39",
+        "TCP": true,
+        "UDP": true,
+        "description": "resource location protocol (rlp)",
+        "official": "true"
+    },
+    {
+        "port": "40",
+        "TCP": true,
+        "UDP": true,
+        "description": "not assigned",
+        "official": "true"
+    },
+    {
+        "port": "41",
+        "TCP": true,
+        "UDP": true,
+        "description": "graphics",
+        "official": "true"
+    },
+    {
+        "port": "42",
+        "TCP": true,
+        "UDP": true,
+        "description": "nameserver, arpa host name server protocol",
+        "official": "true"
+    },
+    {
+        "port": "42",
+        "TCP": true,
+        "UDP": true,
+        "description": "wins",
+        "official": "false"
+    },
+    {
+        "port": "43",
+        "TCP": true,
+        "UDP": false,
+        "description": "whois-protocol",
+        "official": "true"
+    },
+    {
+        "port": "47",
+        "TCP": true,
+        "UDP": true,
+        "description": "ni ftp",
+        "official": "true"
+    },
+    {
+        "port": "49",
+        "TCP": true,
+        "UDP": true,
+        "description": "tacacs login host protocol",
+        "official": "true"
+    },
+    {
+        "port": "50",
+        "TCP": true,
+        "UDP": true,
+        "description": "remote mail checking protocol",
+        "official": "true"
+    },
+    {
+        "port": "51",
+        "TCP": true,
+        "UDP": true,
+        "description": "imp logical address maintenance",
+        "official": "true"
+    },
+    {
+        "port": "52",
+        "TCP": true,
+        "UDP": true,
+        "description": "xns (xerox network systems) time protocol",
+        "official": "true"
+    },
+    {
+        "port": "53",
+        "TCP": true,
+        "UDP": true,
+        "description": "domain name system (dns)",
+        "official": "true"
+    },
+    {
+        "port": "54",
+        "TCP": true,
+        "UDP": true,
+        "description": "xns (xerox network systems) clearinghouse",
+        "official": "true"
+    },
+    {
+        "port": "55",
+        "TCP": true,
+        "UDP": true,
+        "description": "isi graphics language (isi-gl)",
+        "official": "true"
+    },
+    {
+        "port": "56",
+        "TCP": true,
+        "UDP": true,
+        "description": "xns (xerox network systems) authentication",
+        "official": "true"
+    },
+    {
+        "port": "56",
+        "TCP": true,
+        "UDP": true,
+        "description": "route access protocol (rap)",
+        "official": "false"
+    },
+    {
+        "port": "57",
+        "TCP": true,
+        "UDP": false,
+        "description": "mail transfer protocol (mtp)",
+        "official": "false"
+    },
+    {
+        "port": "58",
+        "TCP": true,
+        "UDP": true,
+        "description": "xns (xerox network systems) mail",
+        "official": "true"
+    },
+    {
+        "port": "67",
+        "TCP": false,
+        "UDP": true,
+        "description": "bootstrap protocol (bootp) server; also used by dhcp",
+        "official": "true"
+    },
+    {
+        "port": "68",
+        "TCP": false,
+        "UDP": true,
+        "description": "bootstrap protocol (bootp) client; alsy used by dhcp",
+        "official": "true"
+    },
+    {
+        "port": "69",
+        "TCP": false,
+        "UDP": true,
+        "description": "trivial file transfer protocol (tftp)",
+        "official": "true"
+    },
+    {
+        "port": "70",
+        "TCP": true,
+        "UDP": false,
+        "description": "gopher-protocol",
+        "official": "true"
+    },
+    {
+        "port": "71",
+        "TCP": true,
+        "UDP": false,
+        "description": "genius-protocol",
+        "official": "true"
+    },
+    {
+        "port": "79",
+        "TCP": true,
+        "UDP": false,
+        "description": "finger",
+        "official": "true"
+    },
+    {
+        "port": "80",
+        "TCP": true,
+        "UDP": false,
+        "description": "hypertext transfer protocol (http)",
+        "official": "true"
+    },
+    {
+        "port": "81",
+        "TCP": true,
+        "UDP": false,
+        "description": "torpark – onion-routing",
+        "official": "false"
+    },
+    {
+        "port": "82",
+        "TCP": false,
+        "UDP": true,
+        "description": "torpark – control",
+        "official": "false"
+    },
+    {
+        "port": "83",
+        "TCP": true,
+        "UDP": false,
+        "description": "mit ml device",
+        "official": "true"
+    },
+    {
+        "port": "88",
+        "TCP": true,
+        "UDP": true,
+        "description": "kerberos-authentification-system",
+        "official": "true"
+    },
+    {
+        "port": "90",
+        "TCP": true,
+        "UDP": true,
+        "description": "dnsix (dod network security for information exchange) securit attribute token map",
+        "official": "true"
+    },
+    {
+        "port": "90",
+        "TCP": true,
+        "UDP": true,
+        "description": "pointcast",
+        "official": "false"
+    },
+    {
+        "port": "99",
+        "TCP": true,
+        "UDP": false,
+        "description": "wip message",
+        "official": "false"
+    }
+]
