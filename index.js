@@ -72,29 +72,15 @@ async function customScan() {
 function scanPorts() {
     if(scanDefault) {
         defaultPorts.forEach(async e => {
-            if(await isReachable(host, e.port)) {
-                openPorts.push({
-                    port: e.port,
-                    tcp: e.TCP,
-                    udp: e.UDP,
-                    open: "✅",
-                    service: e.description
-                })
-            } else {
-                openPorts.push({
-                    port: e.port,
-                    tcp: e.TCP,
-                    udp: e.UDP,
-                    open: "❌",
-                    service: e.description
-                })
-            }
+            openPorts.push({
+                port: e.port,
+                tcp: e.TCP ? "✅" : "❌",
+                udp: e.UDP ? "✅" : "❌",
+                open: await isPortReachable(e.port, {host: host}) ? "✅" : "❌",
+                service: e.description
+            })
         })
     }
-}
-
-function isReachable(host, port) {
-    return(isPortReachable(port, {host: host}))
 }
 
 customScan()
