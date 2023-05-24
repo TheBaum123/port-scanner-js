@@ -441,6 +441,13 @@
         "official": false
     },
     {
+        "port": "101",
+        "TCP": true,
+        "UDP": false,
+        "description": "NIC Host Name Server",
+        "official": true
+    },
+    {
         "port": "110",
         "TCP": true,
         "UDP": false,
