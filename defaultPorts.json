@@ -171,15 +171,8 @@
         "port": "24",
         "TCP": true,
         "UDP": true,
-        "description": "priv-mail: privat e-mail-systems.",
+        "description": "priv-mail: privat e-mail-systems. && lmtp (local mail transport protocol)",
         "official": true
-    },
-    {
-        "port": "24",
-        "TCP": true,
-        "UDP": true,
-        "description": "lmtp (local mail transport protocol)",
-        "official": false
     },
     {
         "port": "25",
@@ -193,6 +186,13 @@
         "TCP": true,
         "UDP": true,
         "description": "not assigned",
+        "official": true
+    },
+    {
+        "port": "27",
+        "TCP": true,
+        "UDP": true,
+        "description": "NSW User System FE",
         "official": true
     },
     {
