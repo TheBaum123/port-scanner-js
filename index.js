@@ -93,9 +93,9 @@ setTimeout(() => {
   if (sort == "open") {
     openPorts = openPorts.sort((a, b) => {
       if (a.open == "✅") {
-        return -1
-      } else {
         return 1
+      } else {
+        return -1
       }
     })
   }
