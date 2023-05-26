@@ -63,20 +63,18 @@ async function customScan() {
 
 
 function scanPorts() {
-  if (scanDefault) {
-    defaultPorts.forEach(async e => {
-      openPorts.push({
-        port: e.port,
-        protocol: e.protocol,
-        open: await isPortReachable(e.port, { host: host }) ? "✅" : "❌",
-        service: e.name
-      })
+  defaultPorts.forEach(async e => {
+    openPorts.push({
+      port: e.port,
+      protocol: e.protocol,
+      open: await isPortReachable(e.port, { host: host }) ? "✅" : "❌",
+      service: e.name
     })
-  }
+  })
 }
 
 customScan()
-scanPorts()
+if(scanDefault) scanPorts()
 
 setTimeout(() => {
   if (sort == "port") {
