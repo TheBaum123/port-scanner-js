@@ -42,7 +42,7 @@ let scanDefault = cliOptions.default
 let startingPort = cliOptions.start || 2
 let endingPort = cliOptions.end || 1
 let timeout = cliOptions.timeout || 1
-let sort = cliOptions.sort || "port"
+let sort = cliOptions.sort || "open"
 
 
 let openPorts = []
@@ -74,10 +74,9 @@ function scanPorts() {
     defaultPorts.forEach(async e => {
       openPorts.push({
         port: e.port,
-        tcp: e.TCP ? "✅" : "❌",
-        udp: e.UDP ? "✅" : "❌",
+        protocol: e.protocol,
         open: await isPortReachable(e.port, { host: host }) ? "✅" : "❌",
-        service: e.description
+        service: e.name
       })
     })
   }
