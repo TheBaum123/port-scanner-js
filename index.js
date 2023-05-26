@@ -54,17 +54,10 @@ if (startingPort > endingPort || startingPort < 0 || endingPort < 0) {
 
 async function customScan() {
   for (let i = startingPort; i < endingPort + 1; i++) {
-    if (await isReachable(host, i)) {
-      openPorts.push({
-        port: i,
-        open: "✅",
-      })
-    } else {
-      openPorts.push({
-        port: i,
-        open: "❌",
-      })
-    }
+    openPorts.push({
+      port: i,
+      open: await isPortReachable(i, { host: host }) ? "✅" : "❌"
+    })
   }
 }
 
