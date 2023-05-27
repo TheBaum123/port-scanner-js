@@ -49,6 +49,15 @@ let sort = cliOptions.sort || "open"
 
 let openPorts = []
 
+let portsMap = new Map()
+
+defaultPorts.forEach(port => {
+  portsMap.set(port.port, {
+    "protocol": port.protocol,
+    "name": port.name
+  })
+})
+
 if (startingPort > endingPort || startingPort < 0 || endingPort < 0) {
   scanDefault = true
 }
@@ -58,7 +67,9 @@ async function customScan() {
   for (let i = startingPort; i < endingPort + 1; i++) {
     openPorts.push({
       port: i,
-      open: await isPortReachable(i, { host: host }) ? "✅" : "❌"
+      protocol: portsMap.get(i) ? portsMap.get(i).protocol : "unknown",
+      open: await isPortReachable(i, { host: host }) ? "✅" : "❌",
+      service: portsMap.get(i) ? portsMap.get(i).name : "unknown"
     })
     if(endingPort - 1 == i) setTimeout(() => {done()}, timeout * 1000);
   }
