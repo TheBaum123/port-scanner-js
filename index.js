@@ -3,6 +3,8 @@ const isPortReachable = require("is-port-reachable")
 
 const defaultPorts = require("./defaultPorts.json")
 
+console.time
+
 const cliOptions = yargs
   .option("h", {
     alias: "host",
@@ -17,7 +19,7 @@ const cliOptions = yargs
   })
   .option("t", {
     alias: "timeout",
-    describe: "Set time to wait for scan to finish. Defaults to 1 second. Setting to low might not be able to test all ports.",
+    describe: "Set time to wait for scan to finish in seconds. Defaults to 1 second. Setting to low might not be able to test all ports.",
     type: "integer"
   })
   .option("f", {
@@ -58,6 +60,7 @@ async function customScan() {
       port: i,
       open: await isPortReachable(i, { host: host }) ? "✅" : "❌"
     })
+    if(endingPort - 1 == i) setTimeout(() => {done()}, timeout * 1000);
   }
 }
 
@@ -70,13 +73,14 @@ function scanPorts() {
       open: await isPortReachable(e.port, { host: host }) ? "✅" : "❌",
       service: e.name
     })
+    if(e.port == 49151) setTimeout(() => {done()}, timeout * 1000);
   })
 }
 
 customScan()
 if(scanDefault) scanPorts()
 
-setTimeout(() => {
+function done() {
   if (sort == "port") {
     openPorts = openPorts.sort((a, b) => a.port - b.port)
   }
@@ -90,4 +94,4 @@ setTimeout(() => {
     })
   }
   (console.table(openPorts))
-}, timeout * 1000);
+}
